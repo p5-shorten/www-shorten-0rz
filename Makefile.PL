@@ -10,5 +10,8 @@ build_requires  ('Test::More');
 
 auto_installl;
 
+tests 't/*.t';
+author_tests 'xt/*.t';
+
 WriteAll;
 
