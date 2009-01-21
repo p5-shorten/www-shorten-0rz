@@ -2,7 +2,7 @@ package WWW::Shorten::0rz;
 use strict;
 use warnings;
 use Carp;
-our $VERSION = '0.05';
+our $VERSION = '0.06';
 use base qw( WWW::Shorten::generic Exporter );
 our @EXPORT = qw( makeashorterlink makealongerlink );
 
@@ -13,8 +13,10 @@ sub makeashorterlink {
     my $ua = new WWW::Mechanize;
     $ua->get('http://0rz.tw');
     $ua->submit_form(fields => { url => $url });
-    croak $ua->content unless $ua->find_link( url_regex => qr/http:\/\/0rz.tw/i );
-    return $ua->field('xxurl');
+    my $short = $ua->uri;
+    croak $ua->content unless $short =~qr{http://0rz.tw/.+=$}i;
+    chop($short);
+    return $short;
 }
 
 sub makealongerlink {
