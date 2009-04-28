@@ -7,5 +7,6 @@ use WWW::Shorten '0rz';
 
 dies_ok( sub {
     makeashorterlink('http://1234567890')
+        or die("Failed")
 });
 

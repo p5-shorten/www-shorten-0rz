@@ -2,7 +2,7 @@ package WWW::Shorten::0rz;
 use strict;
 use warnings;
 use Carp;
-our $VERSION = '0.06';
+our $VERSION = '0.07';
 use base qw( WWW::Shorten::generic Exporter );
 our @EXPORT = qw( makeashorterlink makealongerlink );
 
@@ -13,10 +13,14 @@ sub makeashorterlink {
     my $ua = new WWW::Mechanize;
     $ua->get('http://0rz.tw');
     $ua->submit_form(fields => { url => $url });
-    my $short = $ua->uri;
-    croak $ua->content unless $short =~qr{http://0rz.tw/.+=$}i;
-    chop($short);
-    return $short;
+    if ($ua->response->is_success) {
+        my $short = $ua->uri;
+        if ($short =~qr{http://0rz.tw/.+=$}i) {
+            chop($short);
+            return $short;
+        }
+    }
+    return undef;
 }
 
 sub makealongerlink {
@@ -61,7 +65,7 @@ Given a shorted $url, turn it to back to its longer version.
 
 =head1 COPYRIGHT
 
-Copyright 2004-2007 by Kang-min Liu <gugod@gugod.org>.
+Copyright 2004-2009 by Kang-min Liu <gugod@gugod.org>.
 
 This program is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself.
