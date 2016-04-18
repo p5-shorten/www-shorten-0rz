@@ -1,6 +1,9 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+    - Spelling fix
+
+0.071     2016-04-18
     - Move to Dist::Zilla
     - Removed indirect object syntax
     - Scrape results page using Mojo::DOM58

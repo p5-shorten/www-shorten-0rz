@@ -11,7 +11,7 @@ use base qw( WWW::Shorten::generic Exporter );
 our @EXPORT = qw( makeashorterlink makealongerlink );
 
 our $_error_message = '';
-our $VERSION        = '0.071';
+our $VERSION        = '0.072';
 $VERSION = eval $VERSION;
 
 sub makeashorterlink {
@@ -92,7 +92,7 @@ a database of long URLs, each of which has a unique identifier.
 
 =head2 makeashorterlink
 
-The function C<makeashorterlink> will call the L<http://orz.tw> web site passing
+The function C<makeashorterlink> will call the L<http://0rz.tw> web site passing
 it your long URL and will return the shorter version.
 
 =head2 makealongerlink

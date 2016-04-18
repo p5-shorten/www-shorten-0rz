@@ -22,7 +22,7 @@ a database of long URLs, each of which has a unique identifier.
 
 ## makeashorterlink
 
-The function `makeashorterlink` will call the [http://orz.tw](http://orz.tw) web site passing
+The function `makeashorterlink` will call the [http://0rz.tw](http://0rz.tw) web site passing
 it your long URL and will return the shorter version.
 
 ## makealongerlink

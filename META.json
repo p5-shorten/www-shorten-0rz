@@ -62,7 +62,7 @@
    "provides" : {
       "WWW::Shorten::0rz" : {
          "file" : "lib/WWW/Shorten/0rz.pm",
-         "version" : "0.071"
+         "version" : "0.072"
       }
    },
    "release_status" : "stable",
@@ -77,7 +77,7 @@
          "web" : "https://github.com/p5-shorten/www-shorten-0rz"
       }
    },
-   "version" : "0.071",
+   "version" : "0.072",
    "x_contributors" : [
       "Chase Whitener <capoeirab@cpan.org>"
    ]
