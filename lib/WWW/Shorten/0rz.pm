@@ -1,7 +1,8 @@
 package WWW::Shorten::0rz;
+
 use strict;
 use warnings;
-use Carp ();
+use Carp        ();
 use Mojo::DOM58 ();
 use Try::Tiny qw(try catch);
 use WWW::Mechanize ();
@@ -10,7 +11,7 @@ use base qw( WWW::Shorten::generic Exporter );
 our @EXPORT = qw( makeashorterlink makealongerlink );
 
 our $_error_message = '';
-our $VERSION = '0.071';
+our $VERSION        = '0.071';
 $VERSION = eval $VERSION;
 
 sub makeashorterlink {
@@ -21,8 +22,8 @@ sub makeashorterlink {
         $mech->add_header('Accept' => 'text/html');
         $mech->get('http://0rz.tw/create');
         $mech->submit_form(
-            form_id     => 'redirect-form',
-            fields      => { url => $url, },
+            form_id => 'redirect-form',
+            fields  => {url => $url,},
         );
         return undef unless $mech->response->is_success;
         my $dom = Mojo::DOM58->new($mech->response->decoded_content);
