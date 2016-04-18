@@ -77,6 +77,9 @@
          "web" : "https://github.com/p5-shorten/www-shorten-0rz"
       }
    },
-   "version" : "0.071"
+   "version" : "0.071",
+   "x_contributors" : [
+      "Chase Whitener <capoeirab@cpan.org>"
+   ]
 }
 

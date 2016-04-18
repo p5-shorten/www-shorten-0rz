@@ -1,25 +1,22 @@
-0.07:
-Date: 2009-04-28
-Changes:
-- makeashorterlink now returns undef upon any errors, to match WWW::Shorten's document.
+Revision history for {{$dist->name}}
 
-0.06:
-Date: 2009-01-21
-Changes:
-- Catch-up with the latest version of 0rz.tw website
+{{$NEXT}}
+    - Move to Dist::Zilla
+    - Removed indirect object syntax
+    - Scrape results page using Mojo::DOM58
+    - Updated POD and added new README in markdown format
 
-0.05:
-Date: 2007-04-22
-Changes:
-- Add POD tests to improve Module Kwalitee
+0.07      2009-04-28
+    - makeashorterlink now returns undef upon any errors, to match WWW::Shorten's document.
 
-0.04:
-Date: 2006-09-29
-Changes:
-- 0rz.net moved to 0rz.tw
-----
-0.03:
-Date: 2006-08-31
-Changes:
-- add lwhsu's short_already patch.
+0.06      2009-01-21
+    - Catch-up with the latest version of 0rz.tw website
 
+0.05      2007-04-22
+    - Add POD tests to improve Module Kwalitee
+
+0.04      2006-09-29
+    - 0rz.net moved to 0rz.tw
+
+0.03      2006-08-31
+    - add lwhsu's short_already patch.

@@ -1,23 +1,21 @@
-sudo: false
-
 language: perl
 perl:
-   - "5.22"
-   - "5.20"
-   - "5.20-shrplib"
-   - 5.18
-   - "5.18-shrplib"
-   - 5.16
-   - 5.14
-   - 5.12
-   - "5.10"
-   - 5.8
-
-before_install:
-   - eval $(curl https://travis-perl.github.io/init) --auto
-   - cpanm --notest --quiet Module::Install::CPANfile Module::Install::AuthorTests
-
+  - "5.22"
+  - "5.20"
+  - "5.18"
+  - "5.16"
+  - "5.14"
+  - "5.12"
+  - "5.10"
+  - "5.8"
+env:
+  - "AUTOMATED_TESTING=1 AUTHOR_TESTING=1 RELEASE_TESTING=1"
+install:
+  - "cpanm -n Test::More Test::Pod Test::Pod::Coverage Test::CheckManifest"
+  - "cpanm -n Test::CPAN::Changes Test::Kwalitee Test::Pod::Spelling::CommonMistakes"
+  - "cpanm -n --installdeps ."
+script:
+  - perl Makefile.PL && make manifest && make test
+sudo: false
 notifications:
-   irc:
-      channels:
-         - irc.freenode.org#chupei.pm
+  email: false

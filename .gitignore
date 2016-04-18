@@ -1,5 +1,10 @@
-inc/
+WWW-Shorten-*.tar.gz
+WWW-Shorten-*/
+Build
 META.yml
-MANIFEST
-Makefile
-
+MYMETA.json
+MYMETA.yml
+_build/
+blib/
+cover_db/
+.build/
