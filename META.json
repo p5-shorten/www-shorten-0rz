@@ -1,0 +1,82 @@
+{
+   "abstract" : "Shorten URLs using L<http://0rz.tw/>",
+   "author" : [
+      "Kang-min Liu <gugod@gugod.org>"
+   ],
+   "dynamic_config" : 0,
+   "generated_by" : "Dist::Zilla version 5.043, CPAN::Meta::Converter version 2.150005",
+   "license" : [
+      "perl_5"
+   ],
+   "meta-spec" : {
+      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+      "version" : 2
+   },
+   "name" : "WWW-Shorten-0rz",
+   "prereqs" : {
+      "configure" : {
+         "requires" : {
+            "ExtUtils::MakeMaker" : "0"
+         }
+      },
+      "develop" : {
+         "requires" : {
+            "Pod::Coverage::TrustPod" : "0",
+            "Test::CPAN::Changes" : "0.4",
+            "Test::CheckManifest" : "1.29",
+            "Test::Kwalitee" : "1.22",
+            "Test::More" : "0.88",
+            "Test::PAUSE::Permissions" : "0",
+            "Test::Pod" : "1.41",
+            "Test::Pod::Coverage" : "1.08",
+            "Test::Pod::Spelling::CommonMistakes" : "1.000",
+            "Test::Spelling" : "0.12",
+            "Test::Version" : "1"
+         }
+      },
+      "runtime" : {
+         "requires" : {
+            "Carp" : "0",
+            "LWP::UserAgent" : "5.835",
+            "Mojo::DOM58" : "0",
+            "Try::Tiny" : "0.24",
+            "WWW::Mechanize" : "0",
+            "perl" : "5.008001",
+            "strict" : "0",
+            "warnings" : "0"
+         }
+      },
+      "test" : {
+         "recommends" : {
+            "CPAN::Meta" : "2.120900"
+         },
+         "requires" : {
+            "ExtUtils::MakeMaker" : "0",
+            "File::Spec" : "0",
+            "IO::Handle" : "0",
+            "IPC::Open3" : "0",
+            "Test::More" : "0.88"
+         }
+      }
+   },
+   "provides" : {
+      "WWW::Shorten::0rz" : {
+         "file" : "lib/WWW/Shorten/0rz.pm",
+         "version" : "0.071"
+      }
+   },
+   "release_status" : "stable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/p5-shorten/www-shorten-0rz/issues"
+      },
+      "homepage" : "https://github.com/p5-shorten/www-shorten-0rz",
+      "repository" : {
+         "type" : "git",
+         "url" : "https://github.com/p5-shorten/www-shorten-0rz.git",
+         "web" : "https://github.com/p5-shorten/www-shorten-0rz"
+      }
+   },
+   "version" : "0.071"
+}
+
