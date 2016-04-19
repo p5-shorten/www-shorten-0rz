@@ -2,6 +2,7 @@ Revision history for {{$dist->name}}
 
 {{$NEXT}}
     - Spelling fix
+    - Fix missing dependency
 
 0.071     2016-04-18
     - Move to Dist::Zilla

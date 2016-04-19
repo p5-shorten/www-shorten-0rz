@@ -24,6 +24,7 @@ my %WriteMakefileArgs = (
     "Mojo::DOM58" => 0,
     "Try::Tiny" => "0.24",
     "WWW::Mechanize" => 0,
+    "WWW::Shorten" => "3.09",
     "strict" => 0,
     "warnings" => 0
   },
@@ -51,6 +52,7 @@ my %FallbackPrereqs = (
   "Test::More" => "0.88",
   "Try::Tiny" => "0.24",
   "WWW::Mechanize" => 0,
+  "WWW::Shorten" => "3.09",
   "strict" => 0,
   "warnings" => 0
 );
