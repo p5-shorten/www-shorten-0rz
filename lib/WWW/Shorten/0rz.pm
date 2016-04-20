@@ -11,7 +11,7 @@ use base qw( WWW::Shorten::generic Exporter );
 our @EXPORT = qw( makeashorterlink makealongerlink );
 
 our $_error_message = '';
-our $VERSION        = '0.073';
+our $VERSION        = '0.074';
 $VERSION = eval $VERSION;
 
 sub makeashorterlink {
