@@ -1,7 +1,8 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
-    - 
+    - Add Test::More to Test requirements
+    - Add initial release to the changes history.
 
 0.073     2016-04-19
     - Add Travis-CI
@@ -32,3 +33,9 @@ Revision history for {{$dist->name}}
 
 0.03      2006-08-31
     - add lwhsu's short_already patch.
+
+0.02      2004-12-18
+    - Add WWW::Shorten requirement
+
+0.01      2004-12-17
+    - Initial release

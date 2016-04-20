@@ -33,7 +33,8 @@ my %WriteMakefileArgs = (
     "File::Spec" => 0,
     "IO::Handle" => 0,
     "IPC::Open3" => 0,
-    "Test::More" => "0.88"
+    "Test::More" => "0.88",
+    "Try::Tiny" => "0.24"
   },
   "VERSION" => "0.074",
   "test" => {
