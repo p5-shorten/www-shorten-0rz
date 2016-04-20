@@ -1,7 +1,8 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
-    - 
+    - Fix missing dependency by no longer using that dependency
+    - Fix up testing
 
 0.072     2016-04-19
     - Spelling fix
