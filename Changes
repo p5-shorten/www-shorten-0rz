@@ -1,6 +1,7 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+    - Add Travis-CI
     - Fix missing dependency by no longer using that dependency
     - Fix up testing
 
