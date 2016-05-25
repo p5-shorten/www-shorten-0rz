@@ -75,7 +75,7 @@
    "provides" : {
       "WWW::Shorten::0rz" : {
          "file" : "lib/WWW/Shorten/0rz.pm",
-         "version" : "0.074"
+         "version" : "0.075"
       }
    },
    "release_status" : "stable",
@@ -90,7 +90,7 @@
          "web" : "https://github.com/p5-shorten/www-shorten-0rz"
       }
    },
-   "version" : "0.074",
+   "version" : "0.075",
    "x_Dist_Zilla" : {
       "perl" : {
          "version" : "5.024000"
@@ -380,7 +380,7 @@
                   "branch" : null,
                   "changelog" : "Changes",
                   "signed" : 0,
-                  "tag" : "v0.074",
+                  "tag" : "v0.075",
                   "tag_format" : "v%v",
                   "tag_message" : "v%v"
                },
