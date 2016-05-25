@@ -3,6 +3,8 @@ Revision history for {{$dist->name}}
 {{$NEXT}}
     - Add Test::More to Test requirements
     - Add initial release to the changes history.
+    - Use the DZil @starter package rather than @basic
+    - Move actual tests to author testing only
 
 0.073     2016-04-19
     - Add Travis-CI
