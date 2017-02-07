@@ -1,7 +1,9 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
-    -
+    - Add LICENSE file to repository
+    - Add CONTRIBUTING.md to repository
+
 
 0.074     2016-05-24
     - Add Test::More to Test requirements
